@@ -5,7 +5,11 @@ author: Julius
 
 Vestibulum leo turpis, dignissim quis ultrices sit amet, iaculis ac ligula.
 Pellentesque tristique, velit eget scelerisque scelerisque, est dolor ultrices
-arcu, quis ullamcorper justo arcu luctus mauris. Integer congue molestie nisi id
+arcu, quis ullamcorper justo arcu luctus mauris.
+
+<!--more-->
+
+Integer congue molestie nisi id
 posuere. Fusce pellentesque gravida tempus. Integer viverra tortor nec eros
 mollis quis convallis sem laoreet. Nulla id libero ac erat varius laoreet. Proin
 sed est est. Curabitur lacinia fermentum lorem, elementum malesuada ipsum

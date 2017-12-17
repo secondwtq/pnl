@@ -9,3 +9,4 @@ resolver: lts-9.18
 flags: 
     hlibsass:
         externalLibsass: false
+        sharedLibsass: false

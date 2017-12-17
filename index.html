@@ -13,7 +13,10 @@ title: Home
         <a href="/about.html" >Read more about myself …</a>
 
         <h3>Or read some of my recent posts ...</h3>
-        $partial("templates/post-list.html")$
+
+        <ul class="archive-list home-archive-list" >
+            $postsRendered$
+        </ul>
 
         <p>… or you can find more in the <a href="/archive.html">Archives</a>.</p>
     </div>

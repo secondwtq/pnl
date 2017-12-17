@@ -123,6 +123,19 @@ ul.archive-list {
         & + li {
             border-top: 1px dashed rgba(0, 0, 0, 0.1);
         }
+        & > .teaser {
+            padding-left: 6px;
+            font-size: 12px;
+            line-height: 16px;
+            max-height: 48px;
+            overflow: hidden;
+            color: #666;
+        }
+    }
+    &.home-archive-list {
+        & > li {
+            margin-bottom: 12px;
+        }
     }
 }
 
