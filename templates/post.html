@@ -1,8 +1,22 @@
-<div class="info">
-    Posted on $date$
-    $if(author)$
-        by $author$
-    $endif$
-</div>
+<div class="blog-post">
+    <div class="info">
+        <h1>$title$</h1>
+        <div class="blog-post-author-line">
+            $if(author)$
+                by $author$
+            $endif$
+            $date$
+        </div>
+    </div>
+    <hr class="blog-post-endian" />
 
-$body$
+    <div class="blog-post-content">
+        $body$
+    </div>
+    <hr class="blog-post-endian" />
+    <div class="blog-post-footer" >
+        <a href="javascript: window.history.back()">Back</a>
+        To
+        <a href="/" >Home</a>
+    </div>
+</div>

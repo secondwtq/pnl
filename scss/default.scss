@@ -1,0 +1,174 @@
+$color-catalina-blue: #00247d;
+$color-celestial-blue: #4891d9;
+$color-medium-persian-blue: #006aa7;
+$color-lava: #cf142b;
+$color-crimson: #dc143c;
+$color-crimson-2: #a83532;
+$color-red: #f00000;
+$color-tangerine-yellow: #fecc00;
+$color-mango-tango: #ff883e;
+
+body {
+    font-size: 16px;
+    /* margin: 0px auto 0px auto; */
+    font-family: Lora, "Palatino", serif;
+    background: $color-catalina-blue;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+a {
+    padding: 0 2px;
+    color: $color-medium-persian-blue;
+    text-decoration: none;
+    &:hover {
+        background-color: $color-lava;
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+::selection {
+    background-color: $color-mango-tango;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+// TODO: have to make the scrollbar rendered as an overlay
+//  like "position: absolute"
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: $color-lava;
+}
+
+div.home-main {
+    background: white;
+    color: #333;
+    & > .home-main-cont {
+        padding: 32px 24px;
+        max-width: 900px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        a {
+            font-variant: small-caps;
+        }
+    }
+}
+
+div.other-main {
+    background: white;
+    color: #333;
+    padding: 32px;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+div#header {
+    padding: 12px 0px 0 0px;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    & > div#logo {
+        font-family: "Fira Code", "Menlo", monospace;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 16px;
+    }
+    & > #navigation {
+        & > * {
+            display: inline-block;
+            padding: 10px 24px;
+            font-family: "DIN Condensed", "Roboto Condensed", sans-serif;
+        }
+    }
+}
+
+div#footer {
+    color: white;
+    font-size: 12px;
+    padding: 16px 0px 24px 0px;
+    text-align: center;
+    & > a {
+        color: $color-red;
+        &:hover { color: white; }
+    }
+}
+
+ul.archive-list {
+    list-style: none;
+    padding: 0;
+    & > li {
+        line-height: 30px;
+        a.archive-list-title {
+            font-variant: small-caps;
+            text-decoration: none;
+        }
+        & > span.date {
+            float: right;
+            font-style: italic;
+            font-size: 14px;
+        }
+        & + li {
+            border-top: 1px dashed rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+div.info {
+    font-family: Palatino, Georgia, serif;
+    text-align: center;
+    /* padding-bottom: 24px; */
+    div.blog-post-author-line {
+        color: #555;
+        font-size: 14px;
+        font-style: italic;
+    }
+}
+
+div.blog-post {
+    background: #fffef5;
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 24px 24px;
+    color: black;
+    box-shadow: 0 -1px 0 2px black inset;
+    hr.blog-post-endian {
+        border: none;
+        height: 2px;
+        margin: 24px 0;
+        background-color: $color-lava;
+    }
+    div.blog-post-content {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    div.blog-post-footer {
+        text-align: center;
+        font-variant: small-caps;
+        a {
+            color: $color-lava;
+            &:hover { color: white; }
+        }
+    }
+}

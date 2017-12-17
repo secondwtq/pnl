@@ -2,15 +2,19 @@
 title: Home
 ---
 
-<h2>Welcome</h2>
+<div class="home-main" >
+    <div class="home-main-cont" >
+        <h2>Welcome</h2>
 
-<img src="/images/haskell-logo.png" style="float: right; margin: 10px;" />
+        <!-- <img src="/images/haskell-logo.png" style="float: right; margin: 10px;" /> -->
 
-<p>Welcome to my blog!</p>
+        <p>Welcome to my blog!</p>
 
-<p>I've reproduced a list of recent posts here for your reading pleasure:</p>
+        <a href="/about.html" >Read more about myself …</a>
 
-<h2>Posts</h2>
-$partial("templates/post-list.html")$
+        <h3>Or read some of my recent posts ...</h3>
+        $partial("templates/post-list.html")$
 
-<p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
+        <p>… or you can find more in the <a href="/archive.html">Archives</a>.</p>
+    </div>
+</div>
